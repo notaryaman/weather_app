@@ -17,3 +17,18 @@ This project is a simple weather application that fetches and displays the curre
 git clone https://github.com/your-repo/weather-app.git
 cd weather-app
 ```
+2. Configure Environment Variables: create a .env file in the project directory with the following format:
+```
+API_KEY=your_openweathermap_api_key
+LOCATION=your_city_name
+```
+Replace your_openweathermap_api_key with your actual API key and your_city_name with the desired location.
+
+3. Build a docker image: run this to build the docker image
+```
+docker build -t weather-app .
+```
+4. Run the Docker Container
+```
+docker run --env-file .env weather-app
+```
