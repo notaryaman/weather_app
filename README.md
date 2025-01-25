@@ -32,3 +32,12 @@ docker build -t weather-app .
 ```
 docker run --env-file .env weather-app
 ```
+
+## Example Output
+```
+Weather in Isla Vista:
+Temperature: 22°C
+Description: clear sky
+Humidity: 60%
+Wind Speed: 3.5 m/s
+```
